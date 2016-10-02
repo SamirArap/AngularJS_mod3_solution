@@ -1,0 +1,18 @@
+<h3><span ng-if="error">{{error}}</span></h3>
+
+  <li ng-repeat="item in found" class="row">
+      <div class="col-md-1">
+        <span class="menu-name">{{item.short_name}}</span>
+      </div>
+      <div class="col-md-3">
+        <span class="menu-short-name">{{item.name}}</span>
+      </div>
+      <div class="col-md-7">
+        <span class="menu-description">{{item.description}}</span>
+      </div>
+      <div class="col-md-1">
+        <button ng-click="onRemove({index: $index})"class="btn btn-warning btn-xs">Don't want this one!</button>
+      </div>
+
+  </li>
+
